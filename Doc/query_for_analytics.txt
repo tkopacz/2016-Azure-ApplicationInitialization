@@ -1,0 +1,9 @@
+customEvents
+| where timestamp < datetime('2016-11-11T09:53:58.876Z') 
+| order by timestamp  desc 
+
+
+customEvents
+| where application_Version == "2.0" and name contains "16630959161245497009b0dcf3b3f7ae84b285e726a446ecdc05d463330e194e" 
+| order by timestamp  desc 
+
