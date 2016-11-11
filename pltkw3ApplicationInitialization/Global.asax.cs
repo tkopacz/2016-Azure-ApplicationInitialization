@@ -12,7 +12,7 @@ namespace pltkw3ApplicationInitialization {
         public static TelemetryClient TC = new TelemetryClient();
         public volatile static bool IsInitialized = false;
         protected void Application_Start() {
-            TC.Context.Component.Version = "2.0";
+            TC.Context.Component.Version = "2.2";
             string msg = $"Application_Start: WEBSITE_INSTANCE_ID:{Environment.GetEnvironmentVariable("WEBSITE_INSTANCE_ID")}";
             TC.TrackEvent(msg);
             AreaRegistration.RegisterAllAreas();
